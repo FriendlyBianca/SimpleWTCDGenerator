@@ -24,6 +24,12 @@ plugins {
     id "io.franzbecker.gradle-lombok" version "3.1.0"
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'city.makai.wtcd.generator.WTCDGenerator'
+    }
+}
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
